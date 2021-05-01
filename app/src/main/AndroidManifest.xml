@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asplendid.bloodsher">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/appname"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.asplendid.bloodsher.VerifyActivity" />
+        <activity android:name="com.asplendid.bloodsher.AlmostActivity" />
+        <activity android:name="com.asplendid.bloodsher.RegisActivity" />
+        <activity android:name="com.asplendid.bloodsher.LoginActivity" />
+        <activity android:name="com.asplendid.bloodsher.HomeActivity"/>
+        <activity android:name="com.asplendid.bloodsher.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

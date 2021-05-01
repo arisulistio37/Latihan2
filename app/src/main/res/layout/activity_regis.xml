@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegisActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_header"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            >
+
+            <EditText
+                android:id="@+id/edit_text_reg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="20dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/jk"
+                    android:layout_marginLeft="45dp"
+                    android:paddingHorizontal="10dp" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/jk2"
+                    android:layout_marginRight="45dp"
+                    android:paddingHorizontal="10dp"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spin_reg1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:entries="@array/spin1"
+                    android:background="@drawable/spinner_mod"></Spinner>
+                <Spinner
+                    android:id="@+id/spin_reg2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/spinner_mod"
+                    android:entries="@array/spin2">
+                </Spinner>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_text_reg4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Retype Password"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="20dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="45dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="@string/persn"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="45dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="@string/org"/>
+            </RadioGroup>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/spin3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/spinner_mod">
+            </Spinner>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Home Address"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Default Location"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawableRight="@drawable/ic_blood_needed_location" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="20dp"
+                android:text="@string/term"/>
+
+            <Button
+                android:id="@+id/btn_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="REGISTER"
+                android:textColorHint="@color/lightblue"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_mod2"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

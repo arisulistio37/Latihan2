@@ -1,0 +1,55 @@
+<resources>
+    <string name="nama">Ari Sulistio</string>
+    <string name="golda">Blood Type : O</string>
+    <string name="blgive">BLOOD GIVE</string>
+    <string name="blre">BLOOD RECEIVED</string>
+    <string name="nuhun">THANKS</string>
+    <string name="appname">Bloodshare</string>
+    <string name="nuhun2">Thank you for registering with us. One more step, you need to check your email to active your account</string>
+    <string name="codehere">Enter Verification Code Here...</string>
+    <string name="term">Agree with Term and Conditions</string>
+    <string name="donor">Search Donor</string>
+    <string name="donor2">Search Donor Near You</string>
+    <string name="donor3">Donor History</string>
+    <string name="notif">5 Gives, 2 Received</string>
+    <string name="blned">Blood Needed</string>
+    <string name="blned2">4 User Need Blood</string>
+    <string name="meseg">Message</string>
+    <string name="meseg2">5 New Messages</string>
+    <string name="jk">Male</string>
+    <string name="jk2">Female</string>
+    <string name="persn">Personal</string>
+    <string name="org">Organization</string>
+    <string name="accnt">doesnt have account ? Register</string>
+    <string name="verf">Verify Your Account</string>
+    <string name="email">We have send verification code to your email</string>
+    <string name="resen">doesnt get the code ? Resend</string>
+    <string name="alms">Almost There</string>
+
+    <string-array name="spin1">
+        <item>Blood Type</item>
+        <item>A</item>
+        <item>B</item>
+        <item>O</item>
+        <item>AB</item>
+    </string-array>
+
+    <string-array name="spin2">
+        <item>Reshus</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="spin3">
+        <item>Job</item>
+        <item>Accountant</item>
+        <item>Sofware Enginner</item>
+        <item>Others</item>
+    </string-array>
+</resources>
